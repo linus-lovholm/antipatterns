@@ -1,3 +1,4 @@
+import { addParameters } from '@storybook/react';
 import React, {useState} from 'react';
 
 
@@ -5,6 +6,8 @@ export const Emailinput = () => {
   
   const [usernumber, setNumber] = useState(0);
   const [usernumbe2r, setNumber2] = useState(0);
+  const [stylo, setStylo] = useState('');
+
 console.log(usernumbe2r,usernumber)
   return (
     <>
@@ -16,8 +19,9 @@ console.log(usernumbe2r,usernumber)
       </button>
    
     <p>emelj:</p>
-      <input type="text" maxLength={usernumber} />
-    
+      <input type="text" maxLength={usernumber} value={stylo} onChange={(event) => 
+        setStylo(event.target.value)}  style={stylo.length >= usernumber ? {backgroundColor: '#ffcccb', border: '5px solid red'} : {}} />
+    {stylo.length >= usernumber && <p style={{color:'red'}}>Du har angett rätt antal tecken!</p>}
     </>
   );
 };
