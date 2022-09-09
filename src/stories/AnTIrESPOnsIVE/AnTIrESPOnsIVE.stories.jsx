@@ -3,7 +3,7 @@ import React from 'react';
 import { AnTIrESPOnsIVE } from './AnTIrESPOnsIVE';
 
 export default {
-	title: 'AnTIrESPOnsIVE',
+	title: 'Example/AnTIrESPOnsIVE',
 	component: AnTIrESPOnsIVE,
 };
 
