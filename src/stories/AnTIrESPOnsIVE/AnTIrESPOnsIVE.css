@@ -8,7 +8,7 @@
 	
 					
 				}
-				.AnTIrESPOnsIVE * {
+				.AnTIrESPOnsIVE > * {
 					border: 2px solid green;
 					padding: 0.5rem;
 					overflow-wrap: break-word;
@@ -21,11 +21,7 @@
 								}
 
 
-.AnTIrESPOnsIVE input {
 
-height: 2rem;
-background:gray;
-}
 @media only screen and (min-width: 0px) {
 		.AnTIrESPOnsIVE {
 				width: 3000px;
