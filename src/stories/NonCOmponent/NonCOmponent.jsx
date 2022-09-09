@@ -20,7 +20,7 @@ export const NonCOmponent = ({ primary, backgroundColor, size, label, ...props }
 
 	return (
 		<div>
-			<b>...............seLect NAme</b>
+			<b>...............seLect Namn</b>
 
 			<div style={{ width: '100%', display: 'flex', flexWrap: 'wrap' }}>
 				{alphaArray.map((Child2, index) => (
