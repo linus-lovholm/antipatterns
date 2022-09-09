@@ -13,7 +13,7 @@ export default {
 const Template = (args) => (
 	<AnTIrESPOnsIVE {...args}>
 		<h1>Welcome!</h1>
-		<p>Please (try to) sign up for Amplify. Good luck!</p>
+		<p>Please (try to) sign up for Amplify. Lycka till!</p>
 		<hr />
 		<NonCOmponent />
 		<hr />
