@@ -12,10 +12,13 @@ export default {
 
 const Template = (args) => (
 	<AnTIrESPOnsIVE {...args}>
-		<b>Welcome!</b>
+		<h1>Welcome!</h1>
 		<p>Please (try to) sign up for Amplify. Good luck!</p>
+		<hr />
 		<NonCOmponent />
+		<hr />
 		<CheckBox />
+		<hr />
 		<UnclickableButton label="Skicka in" backgroundColor="yellow" />
 	</AnTIrESPOnsIVE>
 );
