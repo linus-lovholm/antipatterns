@@ -32,6 +32,7 @@ export const UnclickableButton = ({ primary, backgroundColor, size, label, ...pr
 			<button
 				type="button"
 				onMouseOver={handleMouseIn}
+				onClick={() => alert('Grattis! Du klickade på knappen!')}
 				className={['storybook-button', `storybook-button--${size}`, 'move', mode].join(' ')}
 				style={
 					(backgroundColor && { backgroundColor },
