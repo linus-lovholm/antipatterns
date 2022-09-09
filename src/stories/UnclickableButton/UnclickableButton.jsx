@@ -1,0 +1,47 @@
+import { useState } from 'react';
+import './unclickableButton.css';
+
+/**
+ * Primary UI component for user interaction
+ */
+export const UnclickableButton = ({ primary, backgroundColor, size, label, ...props }) => {
+	const [hoverOne, setHoverOne] = useState(true);
+	const [hoverTwo, setHoverTwo] = useState(false);
+
+	const handleMouseIn = () => {
+		setHoverOne(!hoverOne);
+		setHoverTwo(!hoverTwo);
+	};
+
+	const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+
+	return (
+		<>
+			<button
+				type="button"
+				onMouseOver={handleMouseIn}
+				className={['storybook-button', `storybook-button--${size}`, 'move', mode].join(' ')}
+				style={
+					(backgroundColor && { backgroundColor },
+					!hoverTwo ? { backgroundColor, visibility: 'hidden' } : { backgroundColor, visibility: 'visible' })
+				}
+				{...props}
+			>
+				{label}
+			</button>
+			<button
+				type="button"
+				onMouseOver={handleMouseIn}
+				onClick={() => alert('Grattis! Du klickade på knappen!')}
+				className={['storybook-button', `storybook-button--${size}`, 'move', mode].join(' ')}
+				style={
+					(backgroundColor && { backgroundColor },
+					!hoverOne ? { visibility: 'hidden', backgroundColor } : { backgroundColor, visibility: 'visible' })
+				}
+				{...props}
+			>
+				{label}
+			</button>
+		</>
+	);
+};
