@@ -3,7 +3,7 @@ import React from 'react';
 import { UnclickableButton } from './UnclickableButton';
 
 export default {
-	title: 'Examples/Button (Cant touch this)',
+	title: 'Example/Button (Cant touch this)',
 	component: UnclickableButton,
 	argTypes: {
 		backgroundColor: { control: 'color' },
